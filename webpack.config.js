@@ -5,6 +5,17 @@ module.exports = {
     //define entry point
     entry: './src/index.ts',
 
+
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                include: [path.resolve(__dirname, 'src')]
+            }
+        ]
+    },
+
     //define output
     output: {
         //'./public/bundle.js',
@@ -12,26 +23,9 @@ module.exports = {
 
         //requires an absolute path, not a relative path
         path: path.resolve(__dirname, 'public')
-        },
-
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                exclude: /(node_modules)/,
-                loader: 'ts-loader', 
-            }
-        ]
-        loaders: [
-            {
-                test: /\.ts$/,
-                exclude: /(node_modules)/,
-                loader: 'ts-loader',
-            
-            }
-        ]
-
     }
+
+
 
 
 

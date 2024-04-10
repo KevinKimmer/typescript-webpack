@@ -2,7 +2,8 @@
   "name": "foo",
   "type": "module",
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "compile": "webpack" 
   },
   "devDependencies": {
     "ts-loader": "^9.5.1",
