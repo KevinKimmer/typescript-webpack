@@ -1,0 +1,11 @@
+Document to set up a work flow of packaging typescript using webpack for deployment
+
+1. npm install typescript --save-dev
+2. "name": "foo",
+  "type": "module",
+  "scripts": {
+    "tsc": "tsc"
+  },
+
+3.npm run tsc --- --init
+4. change tsconfig.json
