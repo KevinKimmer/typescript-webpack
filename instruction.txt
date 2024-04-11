@@ -14,3 +14,9 @@ Document to set up a work flow of packaging typescript using webpack for deploym
 // ts loader tells how to unpack typescript into javascript in webpack
 
 7. create webpack.config.js file
+
+8. add   "compile": "webpack"  to package.json
+
+9. npm run compile
+
+10. npm install webpack-dev-server -D

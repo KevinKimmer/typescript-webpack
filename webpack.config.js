@@ -18,6 +18,9 @@ module.exports = {
 
     //define output
     output: {
+        //tells the dev server where to serve code storred in memory 
+        publicPath: 'public',
+
         //'./public/bundle.js',
         filename: 'bundle.js',
 
