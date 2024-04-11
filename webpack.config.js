@@ -5,7 +5,7 @@ module.exports = {
     //define entry point
     entry: './src/index.ts',
 
-
+    mode: 'development',
     module: {
         rules: [
             {

@@ -1,6 +1,6 @@
 {
   "name": "foo",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "tsc": "tsc",
     "compile": "webpack" 
