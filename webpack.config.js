@@ -1,7 +1,9 @@
 //path module, default with node.js
 const path = require('path');
 
+
 module.exports = {
+    devtool: 'eval-source-map',
     //define entry point
     entry: './src/index.ts',
 
@@ -15,18 +17,28 @@ module.exports = {
             }
         ]
     },
+    //allows import
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
 
     //define output
     output: {
-        //tells the dev server where to serve code storred in memory 
-        publicPath: 'public',
+
 
         //'./public/bundle.js',
         filename: 'bundle.js',
 
         //requires an absolute path, not a relative path
         path: path.resolve(__dirname, 'public')
-    }
+    },
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 9000,
+      }
 
 
 

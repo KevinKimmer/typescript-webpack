@@ -3,8 +3,8 @@
   "type": "commonjs",
   "scripts": {
     "tsc": "tsc",
-    "compile": "webpack",
-    "serve": "webpack-dev-server"
+    "serve": "webpack serve --open --config webpack.config.js",
+    "build": "webpack"
   },
   "devDependencies": {
     "ts-loader": "^9.5.1",
